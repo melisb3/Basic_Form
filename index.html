@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <link type="text/css" rel= "stylesheet" href="style.css">
+    </head>
+        
+        <body>
+
+        <main id="main">
+        
+            <header>
+                <h1 id="survey-form">Contrata a Melisa</h1>    
+            </header>
+
+            <div id="description">
+                <p >Enhorabuena, es una muy buena decisión! <br> Si has llegado hasta aquí, deberías dar el paso.</p>
+            </div>
+
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Nombre</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name-label"
+                        class="form-control"
+                        placeholder="Escribe tu nombre"
+                        required
+                        />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email-label"
+                        class="form-control"
+                        placeholder="Escribe tu Email"
+                        required
+                        />
+                </div>
+                <div id="sueldo" class="form-group">
+                    <input
+                        type="number"
+                        name="sueldo"
+                        id="number-label"
+                        min="1000"
+                        max="5000"
+                        class="form-control"
+                        placeholder="Sueldo ofrecido €"
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="company" for="company">Empresa</label>
+                    <input
+                        type="company"
+                        name="company"
+                        id="company"
+                        class="form-control"
+                        placeholder="Escribe tu empresa"
+                        required
+                        />
+                </div>
+                <div class="form-group">
+                    <p>Qué tipo de perfil buscas?</p>
+                    <select id="dropdown" name="perfil" class="form-control" required>
+                        <option disabled selected value>Selecciona perfil buscado</option>
+                        <option value="student">Student</option>
+                        <option value="stillStudent">Still a student</option>
+                        <option value="junior">Junior</option>
+                        <option value="stillJunior">Still a Junior</option>
+                        <option value="learner">Learner</option>       
+                    </select>
+                </div>
+                <div class= "form-group">
+                    <p>Contratarías a Melisa?</p>
+                    <label>
+                        <input
+                        name="contratarla"
+                        value="definitivamente"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                        />Definitivamente
+                    </label>
+                    <label>
+                        <input
+                        name="contratarla"
+                        value="segurísimo"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                        />Segurísimo
+                    </label>
+                    <label>
+                        <input
+                        name="contratarla"
+                        value="cienporcien"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                        />100 %
+                    </label>
+                </div>
+                <div class="form-group">
+                <p>¿Qué habilidad valoras más?</p>
+                    <select id="habilidad" name="habilidad" class="form-control" required>
+                        <option disabled selected value> Elije una opción:</option>
+                        <option value="java"> Conocimientos en HTML</option>
+                        <option value="java"> Conocimientos en CSS</option>
+                        <option value="java"> Conocimientos en JAVASCRIPT</option>
+                        <option value="java"> Conocimientos en JAVA</option>
+                        <option value="java"> Conocimientos en BDD</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                <p>¿Qué habilidades tendría tu desarrollador de software ideal?
+                    <span class="clue">(Marca todas las deseadas)</span>
+                </p>
+                    <div id="columnas">                    
+                        <div><label
+                            ><input 
+                            name="prefer"
+                            value="html"
+                            type="checkbox"
+                            class="input-checkbox"
+                            />HTML</label>
+                        </div>
+                        <div>
+                        <label
+                            ><input 
+                            name="prefer"
+                            value="css"
+                            type="checkbox"
+                            class="input-checkbox"
+                            />CSS</label>
+                        </label>
+                        </div>
+                        <div>
+                        <label
+                            ><input 
+                            name="prefer"
+                            value="javascript"
+                            type="checkbox"
+                            class="input-checkbox"
+                            />JAVASCRIPT</label>
+                        </label>
+                        </div>
+                    <div>
+                        <label
+                            ><input 
+                            name="prefer"
+                            value="angular"
+                            type="checkbox"
+                            class="input-checkbox"
+                            />ANGULAR</label>
+                        </label>
+                    </div>
+                <div>
+                        <label
+                            ><input 
+                            name="prefer"
+                            value="react"
+                            type="checkbox"
+                            class="input-checkbox"
+                            />REACT</label>
+                        </label>
+                    </div>
+                <div>
+                        <label
+                            ><input 
+                            name="prefer"
+                            value="vue"
+                            type="checkbox"
+                            class="input-checkbox"
+                            />JAVASCRIPT</label>
+                        </label>
+                    </div>
+                <div>
+                        <label
+                            ><input 
+                            name="prefer"
+                            value="java"
+                            type="checkbox"
+                            class="input-checkbox"
+                            />JAVA</label>
+                        </label>
+                    </div>
+                <div>
+                        <label
+                            ><input 
+                            name="prefer"
+                            value="bbdd"
+                            type="checkbox"
+                            class="input-checkbox"
+                            />BBDD</label>
+                        </label>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <p>Comentarios y preguntas:</p>
+                    <textarea
+                        id="comentarios"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Introduce tu comentario o pregunta aquí..."
+                    ></textarea>
+                </div>
+                <div id="boton" class="form-group">
+                    <button type="submit"
+                    id="submit" class="submit-button">
+                    Enviar
+                    </button>
+                </div>
+            </form>      
+        </main>
+    </body>
+</html>
